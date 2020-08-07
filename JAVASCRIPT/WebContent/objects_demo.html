@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+ var a={
+		 fname:"deepak",
+		 lname:"nair",
+		 age:32,
+		 favMovies:["sholay","Dhoom","hum"],
+		 salary: function(){
+			 return 25000;
+		 },
+ 		 fullName:function(){
+ 			 return this.fname+" "+this.lname;
+ 		 },
+ 		 address:{
+ 			 sector:23,
+ 			 city:"Seawoods"
+ 		 }
+ }
+ 
+ 
+ document.write(a.favMovies[1]);
+ console.log(a);
+ 
+ document.write("<br>");
+ 
+ document.write(a.fullName()+" salary is "+a.salary())
+ console.log(a.salary());
+ console.log(a.fullName());
+ 
+ document.write("The address where "+a.fullName()+" stays is "+a.address.sector+" "+a.address.city);
+ console.log(a.address.sector);
+ console.log(a.address.city);
+
+</script>
+</body>
+</html>

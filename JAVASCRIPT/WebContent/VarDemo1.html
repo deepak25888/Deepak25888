@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+document.write("coder technoogies<br>");
+
+var a=10;
+document.write(typeof(a));
+</script>
+</head>
+<body>
+	<script type="text/javascript"> 
+
+document.write("<br>coder technologies");
+
+var a=10;
+document.write("<br>"+typeof(a)+"<br>");
+
+ var b; 
+document.write(typeof(b)+"<br>"); 
+
+var c=null; 
+document.write("<br>"+typeof(c)); 
+
+var s=parseInt(prompt("Enter a Number"));
+document.write("<br>"+s);
+
+var s1=prompt("<br>Enter an operation to be preformed"); 
+
+ switch(s1){ 
+ 	case "Add": 
+		document.write("<br>Addition"); 
+		break;
+	case "Sub": 
+		document.write("<br>Subtraction"); 
+		break; 
+ 	case "Mul": 
+		document.write("<br>Multiplication"); 
+		break; 
+	case "Div": 
+ 		document.write("<br>Division"); 
+ 		break;
+ 	default: 
+ 		document.write("<br>Invalid Choice"); 
+		break; 
+ } 
+ 
+//  var add1=new function("return 'Hello!!!'");
+//  document.write(add1());
+ 
+
+ var add1=new Function("return 'Hello!!!'");
+ document.write(add1());
+
+
+  function show(){
+ 	document.write("Inside Show method");s
+ }
+
+ function add(a,b){
+ 	document.write("Addition :"+(a+b));
+ }
+
+ var add=new Function("n1","n2","return n1+n2");
+ document.write(add(10,10));
+
+
+</script>
+
+
+
+
+	<input type="button" onclick="show()" value="SHOW">
+	<input type="button" onclick="add(10,10)" value="ADD">
+</body>
+</html>

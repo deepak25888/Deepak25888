@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script>
+function hello(){
+	document.write("Hello Coders")
+}
+
+function onDoubleClick(){
+	alert("you have double clicked the option")
+}
+
+</script>
+
+
+
+</head>
+<body onkeypress="onDoubleClick()">  
+
+
+<button onClick="hello()">Click Me</button>
+<p ondblclick="onDoubleClick()">Double Click the link</p>
+
+<p oncontextmenu="hello()">Right Click</p>
+
+<p onmouseenter="hello()">Mouse Hover</p>
+
+<p onmouseout="hello()">Mouse Out</p>
+
+<p onmousedown="hello()">Mouse Down</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<ul id="class">
+<li>Apple</li>
+<li>Orange</li>
+<li>Pineapple</li>
+<li>strawberry</li>
+<li>Chickoo</li>
+</ul>
+
+<div id="div1" color="red">
+<p>Inside a paragraph</p>
+
+</div>
+
+<script>
+
+
+var q=document.getElementById("class").innerText;
+console.log(q);
+
+var q=document.getElementById("class").innerHTML;
+console.log(q);
+
+var q=document.getElementById("div1").getAttribute("color");
+console.log(q);
+
+var q=document.getElementById("div1").attributes[1].value;
+console.log(q);
+
+document.getElementById("div1").innerHTML="<p>My Name is Deepak Nair</p>";
+
+</script>
+
+</body>
+</html>

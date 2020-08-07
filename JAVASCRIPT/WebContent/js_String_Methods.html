@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<Script>
+var str="deepak is nair is student";
+var a= str.length;
+document.write(a);
+
+document.write("<br>");
+document.write(str.toUpperCase());
+
+
+document.write("<br>");
+document.write(str.includes("dee"))
+
+document.write("<br>");
+document.write(str.startsWith("deepak"))
+
+document.write("<br>");
+document.write(str.endsWith("air"))
+
+document.write("<br>");
+document.write(str.search("air"))
+//search retunrns -1 if match not found
+
+document.write("<br>");
+var x= str.match(/is/g);
+document.write(x);
+
+document.write("<br>");
+var y= str.indexOf("is");
+document.write(y);
+
+document.write("<br>");
+var z= str.lastIndexOf("is");
+document.write(z);
+
+document.write("<br>");
+var z= str.lastIndexOf("is");
+document.write(z);
+
+document.write("<br>");
+var b= str.replace(/is/g,"have");
+document.write(b);
+
+document.write("<br>");
+
+str1="use trim function";
+var d=str1.trim();
+//alert(d);
+
+document.write("<br>");
+var t=str1.charAt(0);
+document.write(t);
+
+document.write("<br>");
+var e=str.concat(" "+str1);
+document.write(e);
+
+document.write("<br>");
+var e=str.split(" ");
+document.write(e);
+
+document.write("<br>");
+var e=str.repeat(2);
+document.write(e);
+
+
+document.write("<br>");
+var e=str1.slice(0,5);
+var f=str1.substring(0,5);
+var s=str1.substr(0,5)  //goes till 5 character not including 5th
+document.write(e);
+document.write(f);
+document.write(s);
+
+document.write("<br>");
+var e=50;
+var f=e.toString();
+document.write(f+e);
+
+document.write("<br>");
+var e=false;
+document.write(Number(e));
+
+document.write("<br>");
+var z="10.30 is a number";
+document.write(parseInt(z));
+
+
+document.write("<br>");
+var z="10.30 is a number"; 
+document.write(parseFloat(z));
+
+document.write("<br>");
+var z="Hello";
+document.write(isFinite(z));   //checks only for number returns false for stirngs
+
+document.write("<br>");
+var z="100";
+document.write(isFinite(z));
+
+document.write("<br>");
+var z=100;
+document.write(Number.isInteger(z));
+
+document.write("<br>");
+var z=20.56789;
+document.write(z.toFixed(3));
+
+document.write("<br>");
+var z=20.987;
+document.write(z.toPrecision(3));
+
+
+
+</Script>
+
+</body>
+</html>
